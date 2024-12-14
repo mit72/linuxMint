@@ -5,9 +5,9 @@ var SVGIcons = {
     ctx.strokeStyle="rgba(0,0,0,0)";
     ctx.miterLimit=4;
     ctx.font="15px ''";
-    ctx.font="   15px ''";
-    ctx.scale(0.4480286738351254,0.4480286738351254);
-    ctx.scale(0.32,0.32);
+    //ctx.scale(0.4480286738351254,0.4480286738351254);
+    //ctx.scale(0.32,0.32);
+    ctx.scale(0.358,0.358);
     ctx.save();
     ctx.fillStyle="white";
     ctx.font="   15px ''";
@@ -108,10 +108,22 @@ var SVGIcons = {
     ctx.fill();
     ctx.stroke();
     ctx.restore();
-    ctx.restore();
+    }
+}
+};
+    
+    function drawIcon() {
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+    
+        // Check if the canvas is available
+        if (canvas && ctx) {
+            // Draw the icon
+            SVGIcons["11.svg"].draw(ctx);
+        } else {
+            console.error("Canvas not found.");
+        }
     }
     
-    }}
-    for(var name in SVGIcons){
-                Q.registerImage(name, SVGIcons[name]);
-            }
+    // Call the drawIcon function when the page loads
+    drawIcon();
