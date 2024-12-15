@@ -31,9 +31,10 @@ a {
 .header-text{
     color: white;
     text-decoration: none;
+    font-weight: 600;
 }
 .header-text:hover{
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -47,7 +48,7 @@ header {
     background: -webkit-linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
     background: -o-linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
     background: -ms-linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
-    background: linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
+    background: linear-gradient(150deg, rgb(114,182,50) 0%, #3fb559 50%, rgb(114,182,50) 100%);
     border-bottom: 2px gray solid;
     color: #fff;
     padding: 1rem 0;
@@ -84,7 +85,6 @@ header ul li {
 }  
 
 .hero-content{
-    
     display: block;
     color: white;
     align-items: center;
@@ -133,9 +133,10 @@ footer a:hover {
     text-decoration: underline;
 }
 .footer-img{
-    margin-top: -3px;
-    width: 33px;
-    height: 33px;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    width: 30px;
+    height: 30px;
 }
 
 ::-moz-selection { 
