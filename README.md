@@ -19,7 +19,7 @@ Spletna stran vključuje minimalistično zasnovo, ki omogoča osredotočenje na 
 ## Slike spletne strani
 
 ![App Screenshot](img/mint1.png)
-![App Screenshot](img/mint3.png)
+![App Screenshot](img/mint2.png)
 
 
 ## Avtor
