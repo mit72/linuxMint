@@ -12,8 +12,7 @@ body {
 .container {
     width: 90%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    max-width: 1200px;
 }
 
 h1,
