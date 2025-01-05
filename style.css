@@ -4,36 +4,44 @@ body {
     padding: 0;
     line-height: 1.6;
 }
-#title{
+
+#title {
     color: white;
 }
+
 .container {
     width: 90%;
-    max-width: 1200px;
     margin: auto;
+    max-width: 1200px;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     margin-bottom: 1rem;
 }
+
 a {
     text-decoration: none;
 }
 
-.svg-header{
+.svg-header {
     height: 3rem;
 }
 
-.header-title{
+.header-title {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
-.header-text{
+.header-text {
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
-.header-text:hover{
+
+.header-text:hover {
     text-decoration: underline;
 }
 
@@ -42,17 +50,12 @@ a:hover {
 }
 
 header {
-    
-    background: -moz-linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #2ab9a5), color-stop(50%, #69B53F), color-stop(100%, #2ab9a5));
-    background: -webkit-linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
-    background: -o-linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
-    background: -ms-linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
-    background: linear-gradient(150deg, rgb(114,182,50) 0%, #3fb559 50%, rgb(114,182,50) 100%);
+    background: linear-gradient(150deg, #218c41 0%, #3fb559 50%,#218c41);
     border-bottom: 2px gray solid;
     color: #fff;
     padding: 1rem 0;
-    
+    position: sticky;
+    top: 0;
 }
 
 header .container {
@@ -60,11 +63,20 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
 header ul {
     list-style: none;
     display: flex;
     gap: 1rem;
 }
+
 header ul li {
     display: inline;
 }
@@ -76,36 +88,47 @@ header ul li {
     padding: 4rem 0;
     border-bottom: 1px solid #ddd;
     height: 30rem;
-
 }
+
 .hero .btn {
     display: inline-block;
     padding: 0.5rem 1rem;
     margin-top: 1rem;
-}  
+}
 
-.hero-content{
+.hero-content {
     display: block;
     color: white;
     align-items: center;
 }
 
-#bigger{
+#bigger {
     font-size: 50px;
+}
+
+.link-list {
+    color: #69B53F;
 }
 
 section {
     padding: 2rem 0;
 }
-.features, .downloads, .community, .news {
+
+.features,
+.downloads,
+.community,
+.news {
     background: #f4f4f4;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
+
 .features .feature-list {
     display: flex;
     justify-content: space-between;
 }
+
+
 .feature-item {
     flex: 1;
     margin: 0 1rem;
@@ -116,43 +139,48 @@ section {
 }
 
 footer {
-    background: #333;
+    background: linear-gradient(150deg, #218c41 0%, #3fb559 50%,#218c41);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
 
 }
-.footer-text1{
+
+.footer-text1 {
     font-size: 30px;
 }
+
 footer a {
     color: #fff;
 
 }
+
 footer a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
-.footer-img{
+
+.footer-img {
     vertical-align: middle;
     padding-bottom: 5px;
     width: 30px;
     height: 30px;
 }
 
-::-moz-selection { 
+::-moz-selection {
     color: white;
-    background: rgb(114,182,50);
+    background: rgb(114, 182, 50);
 }
 
 ::selection {
     color: white;
-    background: rgb(114,182,50);
+    background: rgb(114, 182, 50);
 }
 
 .btn {
     display: inline-block;
     font-weight: 500;
-    color: #495057;
+    color: white;
     text-align: center;
     vertical-align: middle;
     user-select: none;
@@ -163,10 +191,11 @@ footer a:hover {
     line-height: 1.6;
     border-radius: 3px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    
 }
+
 .btn-grad {
     color: #fbfbfb;
+    background: linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
     background: linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -177,13 +206,63 @@ footer a:hover {
     background-position: right bottom;
     line-height: 1.92;
     border-radius: 5px;
-}  
+}
 
-.btn-grad.active, .btn-grad:active, .btn-grad:focus, .btn-grad:hover {
+.btn-grad.active,
+.btn-grad:active,
+.btn-grad:focus,
+.btn-grad:hover {
     color: #fbfbfb;
     background-position: left bottom;
 }
 
-.btn-grad.btn-sm, .btn-group-sm > .btn-grad.btn {
+.btn-grad.btn-sm,
+.btn-group-sm>.btn-grad.btn {
     line-height: 1.8;
+}
+
+.btn-sa {
+    background: linear-gradient(150deg, #2ab9a5 0%, #69B53F 50%, #2ab9a5 100%);
+    border: 0px solid white !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .features>.container,
+    .feature-list {
+        text-align: center;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .downloads .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .community .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .community .container > ul {
+        list-style-type: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .news .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
