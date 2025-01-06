@@ -24,5 +24,5 @@ Spletna stran vključuje minimalistično zasnovo, ki omogoča osredotočenje na 
 
 ## Avtor
 
-Mitja Filej
+[@Mitja Filej](https://www.github.com/mit72)
 
