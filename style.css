@@ -56,7 +56,7 @@ a:hover {
 }
 
 header {
-    background: linear-gradient(150deg, #218c41 0%, #3fb559 50%,#218c41);
+    background: linear-gradient(150deg, #218c41 0%, #68C174 50%,#218c41);
     border-bottom: 2px gray solid;
     color: #fff;
     padding: 1rem 0;
@@ -129,6 +129,29 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
+
+.download-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.download-links {
+    display: block;
+    gap: 15px; 
+}
+
+.btn-dwn{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    /*background: rgb(231, 231, 231);
+    border: #69B53F 1px solid;
+    border-radius: 5px; */
+}
+
 .features .feature-list {
     display: flex;
     justify-content: space-between;
@@ -152,7 +175,7 @@ section {
 }
 
 footer {
-    background: linear-gradient(150deg, #218c41 0%, #3fb559 50%,#218c41);
+    background: linear-gradient(150deg, #218c41 0%, /*#3fb559*/#68C174 50%,#218c41);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -241,7 +264,7 @@ footer a:hover {
 
 
 @media only screen and (max-width: 600px) {
-    .features>.container,
+    .features>.download-container,
     .feature-list {
         text-align: center;
         flex-direction: column;
@@ -279,4 +302,3 @@ footer a:hover {
         text-align: center;
     }
 }
-ikone neki spremen, vec contenta
