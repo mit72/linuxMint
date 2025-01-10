@@ -17,9 +17,11 @@ Spletna stran vključuje minimalistično zasnovo, ki omogoča osredotočenje na 
 
 
 ## Slike spletne strani
+Na sliki sta obkrožena logota, ki sta vstavljena z svg in bezierjevo krivuljo (canvas).
+![App Screenshot](img/mint1.png)
 
-![App Screenshot](img/mint1new.png)
-![App Screenshot](img/mint2new.png)
+Na sliki je obkrožen logo vstavljen z img značko.
+![App Screenshot](img/mint2.png)
 
 
 ## Avtor
