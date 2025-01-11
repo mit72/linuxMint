@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         Swal.fire({
             title: 'Author',
-            text: 'Mitja Filej, 4.Rb',
+            text: 'Mitja Filej, 4. Rb',
             icon: 'info',
             iconColor: '#69B53F',
             confirmButtonText: 'OK',
