@@ -9,7 +9,8 @@ body {
     color: white;
 }
 
-.container {
+.container,
+.container-news {
     width: 90%;
     margin: auto;
     max-width: 1200px;
@@ -61,19 +62,13 @@ header {
     padding: 1rem 0;
     position: sticky;
     top: 0;
+    max-height: 200px;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@media only screen and (max-width: 600px) {
-    header .container {
-        flex-direction: column;
-        margin: 0;
-    }
 }
 
 header ul {
@@ -87,7 +82,7 @@ header ul li {
 }
 
 .hero {
-    background: url('img/02.png') no-repeat center center/cover;
+    background: url('../img/02.png') no-repeat center center/cover;
     background-color: #69B53F;
     text-align: center;
     padding: 4rem 0;
@@ -127,7 +122,14 @@ section {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
+.communtiy-container{
+    width: 33%;
+    padding: 1rem;
+}
 
+.communtiy-container h2, .communtiy-container p{
+    text-align: center;
+}
 
 .download-container {
     display: flex;
@@ -140,6 +142,42 @@ section {
 .download-links {
     display: block;
     gap: 15px; 
+}
+
+#news-title h2, h2{
+    text-align: center;
+}
+
+.cont-news{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.news-item{
+    width: 33%;
+    margin: 2rem;
+    border: #69B53F 1px solid;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+    padding: 1rem;
+}
+
+.news-item h3{
+    color: #218c41;
+}
+
+.news-date{
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    color: #b3b3b3;
+}
+
+.news-link{
+    color: inherit;
 }
 
 .btn-dwn{
@@ -261,6 +299,14 @@ footer a:hover {
     border: 0px solid white !important;
 }
 
+
+
+@media only screen and (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        margin: 0;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .features>.download-container,
