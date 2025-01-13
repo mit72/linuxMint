@@ -88,6 +88,7 @@ header ul li {
     padding: 4rem 0;
     border-bottom: 1px solid #ddd;
     height: 30rem;
+    background-attachment: fixed;
 }
 
 .hero .btn {
